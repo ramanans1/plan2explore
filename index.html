@@ -1,0 +1,251 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<!-- ======================================================================= -->
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+<style type="text/css">
+  body {
+    font-family: "Titillium Web","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight:300;
+    font-size:18px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1100px;
+  }
+
+  h1 {
+    font-weight:300;
+  }
+
+  .disclaimerbox {
+    background-color: #eee;
+    border: 1px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+    padding: 20px;
+  }
+
+  video.header-vid {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  img.header-img {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  img.rounded {
+    border: 1px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  a:link,a:visited
+  {
+    color: #1367a7;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #208799;
+  }
+
+  td.dl-link {
+    height: 160px;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+            5px 5px 0 0px #fff, /* The second layer */
+            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+            10px 10px 0 0px #fff, /* The third layer */
+            10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+            15px 15px 0 0px #fff, /* The fourth layer */
+            15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+            20px 20px 0 0px #fff, /* The fifth layer */
+            20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+            25px 25px 0 0px #fff, /* The fifth layer */
+            25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+    margin-left: 10px;
+    margin-right: 45px;
+  }
+
+
+  .layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+            5px 5px 0 0px #fff, /* The second layer */
+            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+            10px 10px 0 0px #fff, /* The third layer */
+            10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 30px;
+    margin-bottom: 5px;
+  }
+
+  .vert-cent {
+    position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+
+  hr
+  {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  }
+
+  #authors td {
+    padding-bottom:5px;
+    padding-top:30px;
+  }
+</style>
+<!-- ======================================================================= -->
+
+<!-- Start : Google Analytics Code -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-64069893-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-64069893-4');
+</script>
+<!-- End : Google Analytics Code -->
+
+<script type="text/javascript" src="resources/hidebib.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic' rel='stylesheet' type='text/css'>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="icon" type="image/png" href="resources/seal_icon.png">
+  <title>Planning to Explore via Self-Supervised World Models</title>
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="canonical" href="https://ramanans1.github.io/plan2explore/" />
+  <meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <meta property="og:site_name" content="Self-Assembling Morphologies" />
+  <meta property="og:type" content="video.other" />
+  <meta property="og:title" content="Planning to Explore via Self-Supervised World Models" />
+  <meta property="og:description" content="Ramanan, Rybkin, Daniilidis, Abbeel, Hafner, Pathak. Planning to Explore via Self-Supervised World Models. 2019." />
+  <meta property="og:url" content="https://ramanans1.github.io/plan2explore/" />
+  <!-- <meta property="og:image" content="https://ramanans1.github.io/plan2explore/resources/teaser.jpg" /> -->
+  <meta property="og:video" content="resources/video.mp4" />
+
+  <meta property="article:publisher" content="https://github.com/ramanans1" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Planning to Explore via Self-Supervised World Models" />
+  <meta name="twitter:description" content="Ramanan, Rybkin, Daniilidis, Abbeel, Hafner, Pathak. Planning to Explore via Self-Supervised World Models. 2019." />
+  <meta name="twitter:url" content="https://ramanans1.github.io/plan2explore/" />
+  <!-- <meta name="twitter:image" content="https://ramanans1.github.io/plan2explore/resources/teaser.jpg" /> -->
+  <meta name="twitter:label1" content="Written by" />
+  <meta name="twitter:data1" content="Oleh Rybkin" />
+  <meta name="twitter:label2" content="Filed under" />
+  <meta name="twitter:data2" content="" />
+  <meta name="twitter:site" content="@_oleh" />
+  <meta property="og:image:width" content="1600" />
+  <meta property="og:image:height" content="900" />
+
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <meta name="twitter:card" content="player" />
+  <!-- <meta name="twitter:image" content="https://ramanans1.github.io/plan2explore/resources/teaser.jpg" /> -->
+  <meta name="twitter:player" content="resources/video.mp4" />
+  <meta name="twitter:player:width" content="640" />
+  <meta name="twitter:player:height" content="360" />
+</head>
+
+<body>
+      <br>
+      <center><span style="font-size:44px;font-weight:bold;">Planning to Explore via Self-Supervised World Models</span></center><br/>
+      <table align=center width=800px>
+      <tr>
+        <td align=center width=150px>
+        <center><span style="font-size:18px"><a href="https://github.com/ramanans1" target="_blank">Ramanan Sekar*</a></span></center></td>
+        <td align=center width=150px>
+        <center><span style="font-size:18px"><a href="https://olehrybkin.com" target="_blank">Oleh Rybkin*</a></span></center></td>
+        <td align=center width=150px>
+        <center><span style="font-size:18px"><a href="http://www.cis.upenn.edu/~kostas/" target="_blank">Kostas Daniilidis</a></span></center></td>
+        <td align=center width=150px>
+        <center><span style="font-size:18px"><a href="https://people.eecs.berkeley.edu/~pabbeel/" target="_blank">Pieter Abbeel</a></span></center></td>
+        <td align=center width=150px>
+        <center><span style="font-size:18px"><a href="https://danijar.com" target="_blank">Danijar Hafner</a></span></center></td>
+        <td align=center width=150px>
+        <center><span style="font-size:18px"><a href="https://people.eecs.berkeley.edu/~pathak/" target="_blank">Deepak Pathak</a></span></center></td>
+      <tr/>
+      <tr>
+        <td align=center width=200px>
+        <center><span style="font-size:18px">UPenn</span></center></td>
+        <td align=center width=200px>
+        <center><span style="font-size:18px">UPenn</span></center></td>
+        <td align=center width=200px>
+        <center><span style="font-size:18px">UPenn</span></center></td>
+        <td align=center width=200px>
+        <center><span style="font-size:18px">UC Berkeley</span></center></td>
+        <td align=center width=200px>
+        <center><span style="font-size:18px">UofT, Google AI</span></center></td>
+        <td align=center width=200px>
+        <center><span style="font-size:18px">CMU, FAIR</span></center></td>
+      <tr/>
+      </table>
+      <table align=center width=600px style="padding-top:0px;padding-bottom:20px">
+          <tr>
+            <td align=center width=600px><center><span style="font-size:20px">* equal contribution</span></center></td>
+          <tr/>
+      </table>
+      <!-- <table align=center width=700px>
+          <tr>
+            <td align=center width=700px><center><span style="font-size:22px">Published at <a href="https://neurips.cc/Conferences/2019/Schedule?showEvent=15685">NeurIPS, 2019</a> (Spotlight)</span></center></td>
+          <tr/>
+          <tr>
+            <td align=center width=700px><center><span style="font-size:22px">Winner of the <a href="https://virtualcreatures.github.io/">Virtual Creatures Competition at GECCO 2019</a></span></center></td>
+          <tr/>
+      </table><br/> -->
+      <!-- <table align=center width=700px>
+          <tr>
+            <td align=center width=100px><center><span style="font-size:28px"><a href="resources/assemblies.pdf">[Paper]</a></span></center></td>
+            <td align=center width=100px><center><span style="font-size:28px"><a href="resources/slides.pdf">[Slides]</a></span></center></td>
+            <td align=center width=100px><center><span style="font-size:28px"><a href="resources/poster.pdf">[Poster]</a></span></center></td>
+            <td align=center width=100px><center><span style="font-size:28px"><a href='https://github.com/pathak22/modular-assemblies/'>[GitHub Code]</a></span></center></td>
+          <tr/>
+      </table><br/> -->
+
+<!--       <center><h2>Project Video</h2></center> -->
+      <table align=center width=300px>
+      <tr><td align=center width=300px>
+      <iframe width="768" height="432" src="resources/video.mp4" frameborder="0" allowfullscreen></iframe>
+      </td></tr>
+      </table>
+      <br>
+
+      <div style="width:800px; margin:0 auto; text-align=center">
+        To solve complex tasks, intelligent agents first need to explore their environments. However, providing manual feedback to agents during exploration can be challenging. This work focuses on self-supervised exploration, where an agent explores a visual environment without yet knowing the tasks it will later be asked to solve. While current methods often learn reactive exploration behaviors to maximize retrospective novelty, we learn a world model trained from images to plan for expected surprise. Novelty is estimated as ensemble disagreement in the latent space of the world model. Exploring and learning the world model without rewards, our approach, <em>Planning to Explore</em> (P2E), efficiently adapts to a range of control tasks with high-dimensional image inputs.
+      </div>
+      <br><hr>
+
+      <div style="width:800px; margin:0 auto; text-align=center">
+        <br>
+        <center>Code and full paper to be released soon.</center>
+      </div>
+      </table>
+      <br/><hr>
+
+<script xml:space="preserve" language="JavaScript">
+hideallbibs();
+</script>
+</body>
+</html>
