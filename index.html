@@ -35,6 +35,18 @@
     -webkit-border-radius: 10px ;
   }
 
+  img {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  iframe {
+    max-width: 100%;
+  }
+
   img.header-img {
     height: 140px;
     border: 1px solid black;
@@ -225,35 +237,35 @@
           <tr/>
       </table><br/>
 
-      <table align=center width=1000px>
+      <!-- <table align=center width=1000px>
         <p style="margin-top:4px;"></p>
-        <tr><td width=1200px>
-          <center><a href="resources/setting.png"><img src = "resources/setting.png" height="400px"></img></a><br></center>
-        </td></tr>
-      </table>
+        <tr><td width=1200px> -->
+          <center><a href="resources/setting.png"><img src = "resources/setting.png" width="800px" ></img></a><br></center>
+        <!-- </td></tr>
+      </table> -->
       <div style="width:800px; margin:0 auto; text-align=center">
         To solve complex tasks, intelligent agents first need to explore their environments. However, providing manual feedback to agents during exploration can be challenging. This work focuses on self-supervised exploration, where an agent explores a visual environment without yet knowing the tasks it will later be asked to solve. While current methods often learn reactive exploration behaviors to maximize retrospective novelty, we learn a world model trained from images to plan for expected surprise. Novelty is estimated as ensemble disagreement in the latent space of the world model. Exploring and learning the world model without rewards, our approach, <em>Planning to Explore</em> (P2E), efficiently adapts to a range of control tasks with high-dimensional image inputs.
       </div>
       <br><hr>
 
-      <center><h1>Demo Video</h1></center>
-      <table align=center width=300px>
-      <tr><td align=center width=300px>
-      <iframe width="768" height="432" src="resources/video.mp4" frameborder="0" allowfullscreen></iframe>
-      </td></tr>
-      </table>
+      <center><h1>Demo Video</h1>
+      <!-- <table align=center width=300px> -->
+      <!-- <tr><td align=center width=300px> -->
+      <iframe width="768" height="432" max-width="100%"  src="resources/video.mp4" frameborder="0" allowfullscreen></iframe></center>
+      <!-- </td></tr> -->
+      <!-- </table> -->
       <br><hr>
 
       <center><h1>Planning to Explore</h1></center>
       <div style="width:800px; margin:0 auto; text-align=center">
         To collect novel data, we encode the image observation into a latent state and use a policy network. We then plan in the latent space by imagining the consequences of the actions of our current policy and backpropagate through the model to improve the policy. One iteration of planning corresponds to one gradient update. The planning objective is to maximize the novelty of future states. To estimate that, we train an ensemble of latent models that predicts the next image embedding given a model state and use its disagreement as a novelty estimate.
       </div><br/>
-      <table align=center width=1000px>
+      <!-- <table align=center width=1000px>
         <p style="margin-top:4px;"></p>
-        <tr><td width=1200px>
-          <center><a href="resources/method.png"><img src = "resources/method.png" height="250px"></img></a><br></center>
-        </td></tr>
-      </table>
+        <tr><td width=1200px> -->
+          <center><a href="resources/method.png"><img src = "resources/method.png" width="800px"></img></a><br></center>
+        <!-- </td></tr>
+      </table> -->
       <br/><hr>
 
       <div style="width:800px; margin:0 auto; text-align=center">
