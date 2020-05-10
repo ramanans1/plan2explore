@@ -19,7 +19,15 @@
   }
 
   div {
-    max-width: 100%;
+    max-width: 95%;
+    margin:auto;
+  }
+
+  .table-like {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: center;
   }
 
   .disclaimerbox {
@@ -189,36 +197,31 @@
 <body>
       <br>
       <center><span style="font-size:44px;font-weight:bold;">Planning to Explore via Self-Supervised World Models</span></center><br/>
-      <table align=center style="max-width:100%;width:800;">
-      <tr>
-        <td align=center>
-        <center><span style="font-size:18px"><a href="https://github.com/ramanans1" target="_blank">Ramanan Sekar*</a></span></center></td>
-        <td align=center >
-        <center><span style="font-size:18px"><a href="https://www.seas.upenn.edu/~oleh/" target="_blank">Oleh Rybkin*</a></span></center></td>
-        <td align=center >
-        <center><span style="font-size:18px"><a href="http://www.cis.upenn.edu/~kostas/" target="_blank">Kostas Daniilidis</a></span></center></td>
-        <td align=center >
-        <center><span style="font-size:18px"><a href="https://people.eecs.berkeley.edu/~pabbeel/" target="_blank">Pieter Abbeel</a></span></center></td>
-        <td align=center >
-        <center><span style="font-size:18px"><a href="https://danijar.com" target="_blank">Danijar Hafner</a></span></center></td>
-        <td align=center>
-        <center><span style="font-size:18px"><a href="https://people.eecs.berkeley.edu/~pathak/" target="_blank">Deepak Pathak</a></span></center></td>
-      <tr/>
-      <tr>
-        <td align=center >
-        <center><span style="font-size:18px">UPenn</span></center></td>
-        <td align=center >
-        <center><span style="font-size:18px">UPenn</span></center></td>
-        <td align=center >
-        <center><span style="font-size:18px">UPenn</span></center></td>
-        <td align=center >
-        <center><span style="font-size:18px">UC Berkeley</span></center></td>
-        <td align=center >
-        <center><span style="font-size:18px">UofT, Google</span></center></td>
-        <td align=center >
-        <center><span style="font-size:18px">CMU, FAIR</span></center></td>
-      <tr/>
-      </table>
+      <div class="table-like" style="justify-content:space-evenly;max-width:900px;margin:auto;">
+          <div><center><span style="font-size:18px"><a href="https://github.com/ramanans1" target="_blank">Ramanan Sekar*</a></span></center>
+          <center><span style="font-size:18px">UPenn</span></center>
+          </div>
+
+          <div><center><span style="font-size:18px"><a href="https://www.seas.upenn.edu/~oleh/" target="_blank">Oleh Rybkin*</a></span></center>
+          <center><span style="font-size:18px">UPenn</span></center>
+          </div>
+
+          <div><center><span style="font-size:18px"><a href="http://www.cis.upenn.edu/~kostas/" target="_blank">Kostas Daniilidis</a></span></center>
+          <center><span style="font-size:18px">UPenn</span></center>
+          </div>
+
+          <div><center><span style="font-size:18px"><a href="https://people.eecs.berkeley.edu/~pabbeel/" target="_blank">Pieter Abbeel</a></span></center>
+          <center><span style="font-size:18px">UC Berkeley</span></center>
+          </div>
+
+          <div><center><span style="font-size:18px"><a href="https://danijar.com" target="_blank">Danijar Hafner</a></span></center>
+          <center><span style="font-size:18px">UofT, Google</span></center>
+          </div>
+
+          <div><center><span style="font-size:18px"><a href="https://people.eecs.berkeley.edu/~pathak/" target="_blank">Deepak Pathak</a></span></center>
+          <center><span style="font-size:18px">CMU, FAIR</span></center>
+          </div>
+      </div>
       <table align=center width=30% style="padding-top:0px;padding-bottom:20px">
           <tr>
             <td align=center><center><span style="font-size:15px">* equal contribution</span></center></td>
@@ -232,15 +235,19 @@
             <td align=center width=700px><center><span style="font-size:22px">Winner of the <a href="https://virtualcreatures.github.io/">Virtual Creatures Competition at GECCO 2019</a></span></center></td>
           <tr/>
       </table><br/> -->
-      <table align=center style="max-width:100%;width:700;">
-          <tr>
-            <td align=center width=30%><center><span style="font-size:28px"><a href="http://www.betr-rl.ml/assets/camera-ready/37.pdf">[Workshop PDF]</a></span></center></td>
+      <div class="table-like" style="justify-content:space-evenly;max-width:700px;margin:auto;">
+         <!-- style="max-width:100%;width:700;text-align:center;" align=center -->
+      <!-- <table align=center  -->
+          <div><center><span style="font-size:28px"><a href="http://www.betr-rl.ml/assets/camera-ready/37.pdf">[Workshop PDF]</a></span></center></div>
+            <!-- <td align=center width=30%></td> -->
             <!-- <td align=center width=100px><center><span style="font-size:28px"><a href="resources/slides.pdf">[Slides]</a></span></center></td> -->
             <!-- <td align=center width=100px><center><span style="font-size:28px"><a href="resources/poster.pdf">[Poster]</a></span></center></td> -->
-            <td align=center width=30%><center><span style="font-size:28px"><a href='https://www.youtube.com/watch?v=GyEzjW1m7kU'>[Talk (5 min)]</a></span></center></td>
-            <td align=center width=30%><center><span style="font-size:28px"><a href='https://github.com/ramanans1/plan2explore'>[GitHub]</a></span></center></td>
-          <tr/>
-      </table><br/>
+          <div><center><span style="font-size:28px"><a href='https://www.youtube.com/watch?v=GyEzjW1m7kU'>[Talk (5 min)]</a></span></center> </div>
+            <!-- <td align=center width=30%><center><span style="font-size:28px"><</td> -->
+
+          <div><center><span style="font-size:28px"><a href='https://github.com/ramanans1/plan2explore'>[GitHub]</a></span></center> </div>
+            <!-- <td align=center width=30%><center> href='https://github.com/ramanans1/plan2explore'>[GitHub]</a></span></center></td> -->
+      </div><br/>
 
       <!-- <table align=center width=1000px>
         <p style="margin-top:4px;"></p>
