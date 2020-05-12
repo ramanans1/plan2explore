@@ -118,7 +118,7 @@ tqdm==4.28.1
 traitlets==4.3.2
 trimesh==2.35.49
 typing==3.6.6
-urllib3==1.24.1
+urllib3==1.24.2
 virtualenv==16.1.0
 wcwidth==0.1.7
 Werkzeug==0.14.1
