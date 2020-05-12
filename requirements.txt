@@ -121,6 +121,6 @@ typing==3.6.6
 urllib3==1.24.1
 virtualenv==16.1.0
 wcwidth==0.1.7
-Werkzeug==0.14.1
+Werkzeug==0.15.3
 wrapt==1.11.1
 zmq==0.0.0
