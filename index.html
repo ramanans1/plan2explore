@@ -224,53 +224,26 @@
           <center><span style="font-size:18px">CMU, FAIR</span></center>
           </div>
       </div>
-      <table align=center width=30% style="padding-top:0px;padding-bottom:20px">
+      <table align=center width=30% style="padding-top:0px;padding-bottom:0px">
           <tr>
             <td align=center><center><span style="font-size:15px">* equal contribution</span></center></td>
           <tr/>
       </table>
-      <!-- <table align=center width=700px>
-          <tr>
-            <td align=center width=700px><center><span style="font-size:22px">Published at <a href="https://neurips.cc/Conferences/2019/Schedule?showEvent=15685">NeurIPS, 2019</a> (Spotlight)</span></center></td>
-          <tr/>
-          <tr>
-            <td align=center width=700px><center><span style="font-size:22px">Winner of the <a href="https://virtualcreatures.github.io/">Virtual Creatures Competition at GECCO 2019</a></span></center></td>
-          <tr/>
-      </table><br/> -->
-      <div class="table-like" style="justify-content:space-evenly;max-width:700px;margin:auto;">
-         <!-- style="max-width:100%;width:700;text-align:center;" align=center -->
-      <!-- <table align=center  -->
-          <div><center><span style="font-size:28px"><a href="https://arxiv.org/abs/2005.05960">[Paper]</a></span></center></div>
-            <!-- <td align=center width=30%></td> -->
-            <!-- <td align=center width=100px><center><span style="font-size:28px"><a href="resources/slides.pdf">[Slides]</a></span></center></td> -->
-            <!-- <td align=center width=100px><center><span style="font-size:28px"><a href="resources/poster.pdf">[Poster]</a></span></center></td> -->
-            <!-- <td align=center width=30%><center><span style="font-size:28px"><</td> -->
 
+      <div class="table-like" style="justify-content:space-evenly;max-width:700px;margin:auto;">
+          <div><center><span style="font-size:28px"><a href="https://arxiv.org/abs/2005.05960">[Paper]</a></span></center></div>
           <div><center><span style="font-size:28px"><a href='https://github.com/ramanans1/plan2explore'>[GitHub Code]</a></span></center> </div>
 
           <div><center><span style="font-size:28px"><a href='https://www.youtube.com/watch?v=GyEzjW1m7kU'>[Long Talk]</a></span></center> </div>
             <!-- <td align=center width=30%><center> href='https://github.com/ramanans1/plan2explore'>[GitHub]</a></span></center></td> -->
       </div><br/>
 
-
-      <!-- <center> -->
-      <!-- <h1>Demo Video</h1> -->
-      <!-- <table align=center width=300px> -->
-      <!-- <tr><td align=center width=300px> -->
-      <!-- <iframe width="768" height="432" max-width="100%"  src="resources/video.mp4" frameborder="0" allowfullscreen></iframe></center> -->
-      <!-- </td></tr> -->
-      <!-- </table> -->
       <center>
-      <iframe width="768" height="432" max-width="100%" src="https://www.youtube.com/embed/GftqnPWsCWw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+      <iframe width="768" height="432" max-width="100%" src="https://www.youtube.com/embed/GftqnPWsCWw?rel=0" frameborder="0" allowfullscreen></iframe></center>
       <br>
 
-      <!-- <table align=center width=1000px>
-        <p style="margin-top:4px;"></p>
-        <tr><td width=1200px> -->
-        <!-- </td></tr>
-      </table> -->
       <div style="width:800px; margin:0 auto; text-align=right;">
-        To solve complex tasks, intelligent agents first need to explore their environments. However, providing manual feedback to agents during exploration can be challenging. This work focuses on self-supervised exploration, where an agent explores a visual environment without yet knowing the tasks it will later be asked to solve. While current methods often learn reactive exploration behaviors to maximize retrospective novelty, we learn a world model trained from images to plan for expected surprise. Novelty is estimated as ensemble disagreement in the latent space of the world model. Exploring and learning the world model without rewards, our approach, <em>Plan2Explore</em>, efficiently adapts to a range of control tasks with high-dimensional image inputs.
+        Reinforcement learning allows solving complex tasks, however, the learning tends to be task-specific and the sample efficiency remains a challenge. We present Plan2Explore, a self-supervised reinforcement learning agent that tackles both these challenges through a new approach to self-supervised exploration and fast adaptation to new tasks, which need not be known during exploration. During exploration, unlike prior methods which retrospectively compute the novelty of observations after the agent has already reached them, our agent acts efficiently by leveraging planning to seek out expected future novelty. After exploration, the agent quickly adapts to multiple downstream tasks in a zero or a few-shot manner. We evaluate on challenging control tasks from high-dimensional image inputs. Without any training supervision or task-specific interaction, Plan2Explore outperforms prior self-supervised exploration methods, and in fact, almost matches the performances oracle which has access to rewards.
       </div>
       <br><hr>
 
@@ -278,15 +251,15 @@
       <div style="width:800px; margin:0 auto; text-align=right">
         The agent first leverages planning to explore in self-supervised manner, without task-specific rewards, to learn a global world model. After the exploration phase, it receives reward functions to adapt to multiple tasks, such as standing, walking, running, and using either zero or few tasks-specific interactions.
       </div>
-      <center><a href="resources/setting.png"><img src = "resources/setting.png" width="800px" ></img></a><br></center>
+      <center><a href="resources/setting.png"><img src = "resources/setting.png" width="600px" ></img></a><br></center>
       <hr>
-<!--
+
 
       <div style="width:800px; margin:0 auto; text-align=center">
-        To collect novel data, we encode the image observation into a latent state and use a policy network. We then plan in the latent space by imagining the consequences of the actions of our current policy and backpropagate through the model to improve the policy. One iteration of planning corresponds to one gradient update. The planning objective is to maximize the novelty of future states. To estimate that, we train an ensemble of latent models that predicts the next image embedding given a model state and use its disagreement as a novelty estimate.
+        <center><h1>Overview of the Algorithm</h1></center>
       </div><br/>
           <center><a href="resources/method.png"><img src = "resources/method.png" width="800px"></img></a><br></center>
-      <br/><hr> -->
+      <br/><hr>
 
 
             <center id="sourceCode"><h1>Source Code</h1></center>
