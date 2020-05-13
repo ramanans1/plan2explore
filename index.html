@@ -239,7 +239,7 @@
       <div class="table-like" style="justify-content:space-evenly;max-width:700px;margin:auto;">
          <!-- style="max-width:100%;width:700;text-align:center;" align=center -->
       <!-- <table align=center  -->
-          <div><center><span style="font-size:28px"><a href="http://www.betr-rl.ml/assets/camera-ready/37.pdf">[Workshop PDF]</a></span></center></div>
+          <div><center><span style="font-size:28px"><a href="https://arxiv.org/abs/2005.05960">[ArXiv]</a></span></center></div>
             <!-- <td align=center width=30%></td> -->
             <!-- <td align=center width=100px><center><span style="font-size:28px"><a href="resources/slides.pdf">[Slides]</a></span></center></td> -->
             <!-- <td align=center width=100px><center><span style="font-size:28px"><a href="resources/poster.pdf">[Poster]</a></span></center></td> -->
@@ -250,10 +250,20 @@
             <!-- <td align=center width=30%><center> href='https://github.com/ramanans1/plan2explore'>[GitHub]</a></span></center></td> -->
       </div><br/>
 
+
+      <center>
+      <!-- <h1>Demo Video</h1> -->
+      <!-- <table align=center width=300px> -->
+      <!-- <tr><td align=center width=300px> -->
+      <iframe width="768" height="432" max-width="100%"  src="resources/video.mp4" frameborder="0" allowfullscreen></iframe></center>
+      <!-- </td></tr> -->
+      <!-- </table> -->
+      <br>
+
+
       <!-- <table align=center width=1000px>
         <p style="margin-top:4px;"></p>
         <tr><td width=1200px> -->
-          <center><a href="resources/setting.png"><img src = "resources/setting.png" width="800px" ></img></a><br></center>
         <!-- </td></tr>
       </table> -->
       <div style="width:800px; margin:0 auto; text-align=center">
@@ -261,25 +271,81 @@
       </div>
       <br><hr>
 
-      <center><h1>Demo Video</h1>
-      <!-- <table align=center width=300px> -->
-      <!-- <tr><td align=center width=300px> -->
-      <iframe width="768" height="432" max-width="100%"  src="resources/video.mp4" frameborder="0" allowfullscreen></iframe></center>
-      <!-- </td></tr> -->
-      <!-- </table> -->
-      <br><hr>
-
       <center><h1>Planning to Explore</h1></center>
+      <div style="width:800px; margin:0 auto; text-align=center">
+        agent first leverages planning to explore in self-supervised manner, without task-specific rewards, to learn a global world model. After the exploration phase, it receives reward functions to adapt to multiple tasks, such as standing, walking, running, and using either zero or few tasks-specific interactions.
+      </div>
+      <center><a href="resources/setting.png"><img src = "resources/setting.png" width="800px" ></img></a><br></center>
+      <hr>
+<!--
+
       <div style="width:800px; margin:0 auto; text-align=center">
         To collect novel data, we encode the image observation into a latent state and use a policy network. We then plan in the latent space by imagining the consequences of the actions of our current policy and backpropagate through the model to improve the policy. One iteration of planning corresponds to one gradient update. The planning objective is to maximize the novelty of future states. To estimate that, we train an ensemble of latent models that predicts the next image embedding given a model state and use its disagreement as a novelty estimate.
       </div><br/>
-      <!-- <table align=center width=1000px>
-        <p style="margin-top:4px;"></p>
-        <tr><td width=1200px> -->
           <center><a href="resources/method.png"><img src = "resources/method.png" width="800px"></img></a><br></center>
-        <!-- </td></tr>
-      </table> -->
-      <br/><hr>
+      <br/><hr> -->
+
+
+            <center id="sourceCode"><h1>Source Code</h1></center>
+            <div style="width:800px; margin:0 auto; text-align=center">
+            We have released our implementation in Tensorflow on the github page. Try our code!
+            </div>
+            <table align=center width=900px>
+              <tr>
+                <!-- <p style="margin-top:4px;"></p> -->
+                <td width=300px align=center>
+                  <span style="font-size:28px"><a href='https://github.com/ramanans1/plan2explore'>[GitHub]</a></span>
+                </td>
+              </tr>
+            </table>
+            <br><hr>
+
+            <table align=center width=850px>
+              <center><h1>Paper and Bibtex</h1></center>
+              <tr>
+              <td width=250px align=left>
+              <!-- <p style="margin-top:4px;"></p> -->
+              <a href="resources/assemblies.pdf"><img style="height:150px" src="resources/thumbnail.png"/></a>
+              <center>
+              <span style="font-size:20pt"><a href="https://arxiv.org/pdf/2005.05960.pdf">[Paper]</a>
+              <span style="font-size:20pt"><a href="https://arxiv.org/abs/2005.05960">[ArXiv]</a>
+              <!-- <span style="font-size:20pt"><a href="resources/slides.pdf">[Slides]</a></span>
+              <span style="font-size:20pt"><a href="resources/poster.pdf">[Poster]</a></span> -->
+              </center>
+              </td>
+              <td width=50px align=center>
+              </td>
+              <td width=550px align=left>
+              <!-- <p style="margin-top:4px;"></p> -->
+              <p style="text-align:left;"><b><span style="font-size:20pt">Citation</span></b><br/><span style="font-size:6px;">&nbsp;<br/></span> <span style="font-size:15pt">Ramanan Sekar, Oleh Rybkin, Kostas Daniilidis, Pieter Abbeel, Danijar Hafner, Deepak Pathak. <b>Planning to Explore via Self-Supervised World Models.<br/></b></span></p>
+              <!-- <p style="margin-top:20px;"></p> -->
+              <span style="font-size:20pt"><a shape="rect" href="javascript:togglebib('assemblies19_bib')" class="togglebib">[Bibtex]</a></span>
+              </td>
+              </tr>
+              <tr>
+              <td width=250px align=left>
+              </td>
+              <td width=50px align=center>
+              </td>
+              <td width=550px align=left>
+                <div class="paper" id="assemblies19_bib">
+<pre xml:space="preserve">
+@misc{sekar2020planning,
+    title={Planning to Explore
+    via Self-Supervised World Models},
+    author={Ramanan Sekar and Oleh Rybkin
+    and Kostas Daniilidis and Pieter Abbeel
+    and Danijar Hafner and Deepak Pathak},
+    year={2020},
+    eprint={2005.05960},
+    archivePrefix={arXiv},
+}</pre>
+                </div>
+                </td>
+                </tr>
+            </table>
+          <br><hr>
+
 
       <!-- <div style="width:800px; margin:0 auto; text-align=center">
         <br>
