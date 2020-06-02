@@ -2,7 +2,7 @@
 
 #### [[Project Website]](https://ramanans1.github.io/plan2explore/) [[Talk]](https://www.youtube.com/watch?v=GyEzjW1m7kU)
 
-[Ramanan Sekar*<sup>1</sup>](https://github.com/ramanans1.git), [Oleh Rybkin*<sup>1</sup>](https://www.seas.upenn.edu/~oleh/), [Kostas Daniilidis<sup>1</sup>](http://www.cis.upenn.edu/~kostas/), [Pieter Abbeel<sup>2</sup>](https://people.eecs.berkeley.edu/~pabbeel/), [Danijar Hafner<sup>3,4</sup>](https://danijar.com/), [Deepak Pathak<sup>5,6</sup>](https://people.eecs.berkeley.edu/~pathak/)<br/>
+[Ramanan Sekar*<sup>1</sup>](https://ramanans1.github.io/), [Oleh Rybkin*<sup>1</sup>](https://www.seas.upenn.edu/~oleh/), [Kostas Daniilidis<sup>1</sup>](http://www.cis.upenn.edu/~kostas/), [Pieter Abbeel<sup>2</sup>](https://people.eecs.berkeley.edu/~pabbeel/), [Danijar Hafner<sup>3,4</sup>](https://danijar.com/), [Deepak Pathak<sup>5,6</sup>](https://people.eecs.berkeley.edu/~pathak/)<br/>
 (&#42; equal contribution)
 
 <sup>1</sup>University of Pennsylvania </br> <sup>2</sup>UC Berkeley </br> <sup>3</sup>Google Research, Brain Team </br> <sup>4</sup>University of Toronto </br>  <sup>5</sup>Carnegie Mellon University </br> <sup>6</sup>Facebook AI Research
@@ -16,12 +16,14 @@
 This is a TensorFlow based implementation for our [paper on planning to explore via self-supervised world models](https://ramanans1.github.io/plan2explore/). This work focuses on self-supervised exploration, where an agent explores a visual environment without yet knowing the tasks it will later be asked to solve. While current methods often learn reactive exploration behaviors to maximize retrospective novelty, we learn a world model trained from images to plan for expected surprise. Novelty is estimated as ensemble disagreement in the latent space of the world model. Exploring and learning the world model without rewards, our approach, Plan2Explore, efficiently adapts to a range of control tasks with high-dimensional image inputs. If you find this work useful in your research, please cite:
 
 ```
-@inproceedings{sekar20plan2explore,
-    Author = {Sekar, Ramanan and Rybkin, Oleh and Daniilidis, Kostas and
-              Abbeel, Pieter and Hafner, Danijar and Pathak, Deepak},
-    Title = {Planning to Explore via Self-Supervised World Models},
-    Booktitle = {},
-    Year = {2020}
+@inproceedings{sekar2020planning,
+    title={Planning to Explore
+    via Self-Supervised World Models},
+    author={Ramanan Sekar and Oleh Rybkin
+    and Kostas Daniilidis and Pieter Abbeel
+    and Danijar Hafner and Deepak Pathak},
+    year={2020},
+    Booktitle={ICML},
 }
 ```
 
