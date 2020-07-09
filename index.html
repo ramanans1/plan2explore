@@ -16,6 +16,7 @@
 
   h1 {
     font-weight:300;
+    max-width: 100%;
   }
 
   div {
@@ -49,6 +50,14 @@
   }
 
   img {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  table {
     padding: 0;
     display: block;
     margin: 0 auto;
@@ -159,7 +168,7 @@
 <div max-width=100%>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <link rel="icon" type="image/png" href="resources/seal_icon.png">
+  <link rel="icon" type="image/png" href="resources/seal_icon.png" />
   <title>Planning to Explore via Self-Supervised World Models</title>
   <meta name="HandheldFriendly" content="True" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -169,7 +178,7 @@
   <meta property="og:site_name" content="Planning to Explore" />
   <meta property="og:type" content="video.other" />
   <meta property="og:title" content="Planning to Explore via Self-Supervised World Models" />
-  <meta property="og:description" content="Sekar, Rybkin, Daniilidis, Abbeel, Hafner, Pathak. Planning to Explore via Self-Supervised World Models. 2020." />
+  <meta property="og:description" content="Sekar, Rybkin, Daniilidis, Abbeel, Hafner, Pathak. Planning to Explore via Self-Supervised World Models. ICML 2020." />
   <meta property="og:url" content="https://ramanans1.github.io/plan2explore/" />
   <meta property="og:image" content="https://ramanans1.github.io/plan2explore/resources/setting.png" />
   <meta property="og:video" content="https://www.youtube.com/v/GftqnPWsCWw" />
@@ -177,14 +186,14 @@
   <meta property="article:publisher" content="https://github.com/ramanans1" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Planning to Explore via Self-Supervised World Models" />
-  <meta name="twitter:description" content="Sekar, Rybkin, Daniilidis, Abbeel, Hafner, Pathak. Planning to Explore via Self-Supervised World Models. 2020." />
+  <meta name="twitter:description" content="Sekar, Rybkin, Daniilidis, Abbeel, Hafner, Pathak. Planning to Explore via Self-Supervised World Models. ICML 2020." />
   <meta name="twitter:url" content="https://ramanans1.github.io/plan2explore/" />
   <meta name="twitter:image" content="https://ramanans1.github.io/plan2explore/resources/setting.png" />
   <!-- <meta name="twitter:label1" content="Written by" />
-  <meta name="twitter:data1" content="Oleh Rybkin" /> -->
+  <meta name="twitter:data1" content="Deepak Pathak" /> -->
   <!-- <meta name="twitter:label2" content="Filed under" />
   <meta name="twitter:data2" content="" /> -->
-  <meta name="twitter:site" content="@_oleh" />
+  <meta name="twitter:site" content="@pathak2206" />
   <meta property="og:image:width" content="1600" />
   <meta property="og:image:height" content="900" />
 
@@ -220,13 +229,13 @@
           <center><span style="font-size:18px">UofT, Google</span></center>
           </div>
 
-          <div><center><span style="font-size:18px"><a href="https://people.eecs.berkeley.edu/~pathak/" target="_blank">Deepak Pathak</a></span></center>
+          <div><center><span style="font-size:18px"><a href="http://www.cs.cmu.edu/~dpathak/" target="_blank">Deepak Pathak</a></span></center>
           <center><span style="font-size:18px">CMU, FAIR</span></center>
           </div>
       </div>
-      <table align=center width=30% style="padding-top:0px;padding-bottom:0px">
+      <table align=center width=600px style="padding-top:0px;padding-bottom:0px">
           <tr>
-            <td align=center><center><span style="font-size:15px">* equal contribution</span></center></td>
+            <td align=center width=600px><center><span style="font-size:15px">* equal contribution</span></center></td>
           <tr/>
       </table>
       <center><span style="font-size:20px;"><a href='https://icml.cc/Conferences/2020'>International Conference on Machine Learning (ICML), 2020</a></span></center>
@@ -255,31 +264,29 @@
       <hr>
 
 
-      <div style="width:800px; margin:0 auto; text-align=center">
-        <center><h1>Overview of the Algorithm</h1></center>
-      </div><br/>
-          <center><a href="resources/method.png"><img src = "resources/method.png" width="800px"></img></a><br></center>
+      <center><h1>Overview of the Algorithm</h1></center><br/>
+      <center><a href="resources/method.png"><img src = "resources/method.png" width="800px"></img></a><br></center>
       <br/><hr>
 
 
             <center id="sourceCode"><h1>Source Code</h1></center>
-            <div style="width:800px; margin:0 auto; text-align=right">
+            <div style="width:650px; margin:0 auto; text-align=right">
             We have released our implementation in Tensorflow on the github page. Try our code!
             </div>
-            <table align=center width=900px>
+            <table align=center width=600px>
               <tr>
                 <!-- <p style="margin-top:4px;"></p> -->
-                <td width=300px align=center>
-                  <span style="font-size:28px"><a href='https://github.com/ramanans1/plan2explore'>[GitHub]</a></span>
+                <td width=600px align=center>
+                  <center><span style="font-size:28px"><a href='https://github.com/ramanans1/plan2explore'>[GitHub]</a></span></center>
                 </td>
               </tr>
             </table>
             <br><hr>
 
-            <table align=center width=850px>
               <center><h1>Paper and Bibtex</h1></center>
+              <table align=center width=850px>
               <tr>
-              <td width=250px align=left>
+              <td width="30%" align=left>
               <!-- <p style="margin-top:4px;"></p> -->
               <a href="https://arxiv.org/pdf/2005.05960.pdf"><img style="height:150px" src="resources/thumbnail.png"/></a>
               <center>
@@ -289,9 +296,9 @@
               <span style="font-size:20pt"><a href="resources/poster.pdf">[Poster]</a></span> -->
               </center>
               </td>
-              <td width=50px align=center>
+              <td width="6%" align=center>
               </td>
-              <td width=550px align=left>
+              <td width="64%" align=left>
               <!-- <p style="margin-top:4px;"></p> -->
               <p style="text-align:left;"><b><span style="font-size:20pt">Citation</span></b><br/><span style="font-size:6px;">&nbsp;<br/></span> <span style="font-size:15pt">Ramanan Sekar, Oleh Rybkin, Kostas Daniilidis, Pieter Abbeel, Danijar Hafner, Deepak Pathak. <b>Planning to Explore via Self-Supervised World Models.<br/></b></span></p>
               <!-- <p style="margin-top:20px;"></p> -->
@@ -299,11 +306,11 @@
               </td>
               </tr>
               <tr>
-              <td width=250px align=left>
+              <td width="30%" align=left>
               </td>
-              <td width=50px align=center>
+              <td width="6%" align=center>
               </td>
-              <td width=550px align=left>
+              <td width="64%" align=left>
                 <div class="paper" id="plan2explore2019_bib">
 <pre xml:space="preserve">
 @inproceedings{sekar2020planning,
@@ -320,14 +327,7 @@
                 </tr>
             </table>
           <br><hr>
-
-
-      <!-- <div style="width:800px; margin:0 auto; text-align=center">
-        <br>
-        <center>Code and full paper to be released soon.</center>
-      </div> -->
       </table>
-      <!-- <br/><hr> -->
 
 <script xml:space="preserve" language="JavaScript">
 hideallbibs();
