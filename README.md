@@ -2,7 +2,7 @@
 
 #### [[Project Website]](https://ramanans1.github.io/plan2explore/) [[Demo Video]](https://youtu.be/GftqnPWsCWw) [[Long Talk]](https://youtu.be/gan79mAVfq8)
 
-[Ramanan Sekar*<sup>1</sup>](https://ramanans1.github.io/), [Oleh Rybkin*<sup>1</sup>](https://www.seas.upenn.edu/~oleh/), [Kostas Daniilidis<sup>1</sup>](http://www.cis.upenn.edu/~kostas/), [Pieter Abbeel<sup>2</sup>](https://people.eecs.berkeley.edu/~pabbeel/), [Danijar Hafner<sup>3,4</sup>](https://danijar.com/), [Deepak Pathak<sup>5,6</sup>](https://people.eecs.berkeley.edu/~pathak/)<br/>
+[Ramanan Sekar*<sup>1</sup>](https://ramanans1.github.io/), [Oleh Rybkin*<sup>1</sup>](https://www.seas.upenn.edu/~oleh/), [Kostas Daniilidis<sup>1</sup>](http://www.cis.upenn.edu/~kostas/), [Pieter Abbeel<sup>2</sup>](https://people.eecs.berkeley.edu/~pabbeel/), [Danijar Hafner<sup>3,4</sup>](https://danijar.com/), [Deepak Pathak<sup>5,6</sup>](https://www.cs.cmu.edu/~dpathak/)<br/>
 (&#42; equal contribution)
 
 <sup>1</sup>University of Pennsylvania </br> <sup>2</sup>UC Berkeley </br> <sup>3</sup>Google Research, Brain Team </br> <sup>4</sup>University of Toronto </br>  <sup>5</sup>Carnegie Mellon University </br> <sup>6</sup>Facebook AI Research
