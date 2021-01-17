@@ -1,6 +1,6 @@
 ## Planning to Explore via Self-Supervised World Models ##
 
-#### [[Project Website]](https://ramanans1.github.io/plan2explore/) [[Demo Video]](https://youtu.be/GftqnPWsCWw) [[Long Talk]](https://youtu.be/gan79mAVfq8)
+#### [[Project Website]](https://ramanans1.github.io/plan2explore/) [[Demo Video]](https://youtu.be/GftqnPWsCWw) [[Long Talk]](https://youtu.be/gan79mAVfq8) [[TF2 version]](https://github.com/danijar/dreamerv2)
 
 [Ramanan Sekar*<sup>1</sup>](https://ramanans1.github.io/), [Oleh Rybkin*<sup>1</sup>](https://www.seas.upenn.edu/~oleh/), [Kostas Daniilidis<sup>1</sup>](http://www.cis.upenn.edu/~kostas/), [Pieter Abbeel<sup>2</sup>](https://people.eecs.berkeley.edu/~pabbeel/), [Danijar Hafner<sup>3,4</sup>](https://danijar.com/), [Deepak Pathak<sup>5,6</sup>](https://www.cs.cmu.edu/~dpathak/)<br/>
 (&#42; equal contribution)
@@ -26,6 +26,20 @@ This is a TensorFlow based implementation for our [paper on planning to explore 
     Booktitle={ICML}
 }
 ```
+
+### TF2 implementation
+
+Please note that a **TensorFlow 2** implementation on the base of Dreamer V2 is now available [here](https://github.com/danijar/dreamerv2). To replicate zero-shot results in the TF2 implementation, run
+```
+python dreamer.py --logdir logdir/walker_walk/zero_shot --configs defaults dmc --task walker_walk --expl_behavior plan2explore --expl_until 1e6 --steps 1.1e6 --grad_heads: 'image'
+```
+
+To replicate few-shot results in the TF2 implementation, run
+```
+python dreamer.py --logdir logdir/walker_walk/zero_shot --configs defaults dmc --task walker_walk --expl_behavior plan2explore --expl_until 4e6 --steps 4e6 --grad_heads: 'image'
+```
+
+### TF1 implementation (this repo)
 
 #### Setting up repository
 
