@@ -137,3 +137,8 @@ These are good places to start when modifying the code:
 The available tasks are listed in `plan2explore/scripts/tasks.py`. The hyper-parameters can be found in `plan2explore/scripts/configs.py`. The possible configurations for main experiment defaults are `disagree [or] random [or] dreamer [or] prediction_error`. To get started, some quick hyper-parameters for playing around with Plan2Explore are `intrinsic_scale`, `ensemble_model_type`, `model_size`, `state_size`, `ensemble_loss_scale`.
 
 This codebase was built on top of [Dreamer](https://github.com/google-research/dreamer).
+
+
+### TF2 implementation
+
+The evaluation curves for Figures 3 and 6 (zero-shot evaluation) are [here](dmc_zeroshot_plan2explore.json)
