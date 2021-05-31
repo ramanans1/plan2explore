@@ -139,6 +139,6 @@ The available tasks are listed in `plan2explore/scripts/tasks.py`. The hyper-par
 This codebase was built on top of [Dreamer](https://github.com/google-research/dreamer).
 
 
-### TF2 implementation
+### Evaluation curves JSON
 
 The evaluation curves for Figures 3 and 6 (zero-shot evaluation) are [here](dmc_zeroshot_plan2explore.json)
