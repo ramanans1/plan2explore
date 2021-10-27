@@ -16,7 +16,7 @@ ConfigArgParse==0.13.0
 contextlib2==0.5.5
 cycler==0.10.0
 Cython==0.29.2
-dask==1.0.0
+dask==2021.10.0
 decorator==4.3.0
 descartes==1.1.0
 dill==0.3.0
