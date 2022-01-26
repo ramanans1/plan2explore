@@ -27,16 +27,16 @@ This is a TensorFlow based implementation for our [paper on planning to explore 
 }
 ```
 
-### TF2 implementation
+### TF2 implementation (updated 01/26/22)
 
 Please note that a **TensorFlow 2** implementation on the base of Dreamer V2 is now available [here](https://github.com/danijar/dreamerv2). To replicate zero-shot results in the TF2 implementation, run
 ```
-python dreamer.py --logdir logdir/walker_walk/zero_shot --configs defaults dmc --task dmc_walker_walk --expl_behavior plan2explore --expl_until 4e6 --steps 4e6 --grad_heads: 'image'
+python dreamerv2/train.py --logdir ~/logs/walker_walk/zero_shot --configs dmc_vision --task dmc_walker_walk --expl_behavior Plan2Explore --expl_until 4e6 --steps 4e6 --grad_heads 'decoder'
 ```
 
 To replicate few-shot results in the TF2 implementation, run
 ```
-python dreamer.py --logdir logdir/walker_walk/zero_shot --configs defaults dmc --task dmc_walker_walk --expl_behavior plan2explore --expl_until 1e6 --steps 1.1e6 --grad_heads: 'image'
+python dreamerv2/train.py --logdir ~/logs/walker_walk/zero_shot --configs dmc_vision --task dmc_walker_walk --expl_behavior Plan2Explore --expl_until 1e6 --steps 1.1e6 --grad_heads 'decoder'
 ```
 
 ### TF1 implementation (this repo)
