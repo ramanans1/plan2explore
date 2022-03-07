@@ -31,13 +31,15 @@ This is a TensorFlow based implementation for our [paper on planning to explore 
 
 Please note that a **TensorFlow 2** implementation on the base of Dreamer V2 is now available [here](https://github.com/danijar/dreamerv2). To replicate zero-shot results in the TF2 implementation, run
 ```
-python dreamerv2/train.py --logdir ~/logs/walker_walk/zero_shot --configs dmc_vision --task dmc_walker_walk --expl_behavior Plan2Explore --expl_until 4e6 --steps 4e6 --grad_heads 'decoder'
+python dreamerv2/train.py --logdir ~/logs/walker_walk/zero_shot --configs dmc_vision --task dmc_walker_walk --expl_behavior Plan2Explore --expl_until 2e6 --steps 2e6 --grad_heads 'decoder'
 ```
 
 To replicate few-shot results in the TF2 implementation, run
 ```
-python dreamerv2/train.py --logdir ~/logs/walker_walk/zero_shot --configs dmc_vision --task dmc_walker_walk --expl_behavior Plan2Explore --expl_until 1e6 --steps 1.1e6 --grad_heads 'decoder'
+python dreamerv2/train.py --logdir ~/logs/walker_walk/zero_shot --configs dmc_vision --task dmc_walker_walk --expl_behavior Plan2Explore --expl_until 5e5 --steps 5.05e5 --grad_heads 'decoder'
 ```
+
+The number of steps for both of these runs is specified in the agent steps. The number of environment steps as reported in the paper is 2x larger due to action repeat.
 
 ### TF1 implementation (this repo)
 
