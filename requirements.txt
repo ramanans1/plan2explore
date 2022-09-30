@@ -46,7 +46,7 @@ intel-openmp==2019.0
 ipython==7.2.0
 ipython-genutils==0.2.0
 jedi==0.13.2
-joblib==0.13.0
+joblib==1.2.0
 Keras==2.2.4
 Keras-Applications==1.0.6
 Keras-Preprocessing==1.0.5
