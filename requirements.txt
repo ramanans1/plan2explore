@@ -5,7 +5,7 @@ attrs==18.2.0
 backcall==0.1.0
 baselines==0.1.5
 blessings==1.7
-certifi==2018.11.29
+certifi==2022.12.7
 cffi==1.11.5
 chardet==3.0.4
 Click==7.0
