@@ -43,7 +43,7 @@ idna==2.8
 imageio==2.4.1
 imgaug==0.2.7
 intel-openmp==2019.0
-ipython==7.2.0
+ipython==8.10.0
 ipython-genutils==0.2.0
 jedi==0.13.2
 joblib==0.13.0
